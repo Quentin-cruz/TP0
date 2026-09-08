@@ -18,19 +18,22 @@ int main()
 		printf("Entrez votre age : ");
 		scanf("%d", &age);
 		printf("Choisissez votre sexe (M/F) : ");
-		scanf("%s", &sexe);
+		scanf("%s", sexe);
 		printf("Entrez le nombre de fois ou vous allez au cinema par mois : ");
 		scanf("%d", &cinema);
 		printf("Entrez le fast food que vous preferez : ");
-		scanf("%s", &fastfood);
+		std::cin >> fastfood;
 		printf("Entrez le nombre de fois ou vous allez au fast food par mois : ");
 		scanf("%d", &fastfood_visits);
 		printf("Pratiquez-vous un sport ? (oui/non) : ");
-		scanf("%s", &sport);
-		printf("Entrez le nom du sport que vous pratiquez : ");
-		scanf("%s", &sport_name);
+		scanf("%s", sport);
+		if (sport == "non") {
+			printf("Entrez le nom du sport que vous pratiquez : ");
+			std::cin >> sport_name;
+		}
+		
 
-		printf("\nRecapitulatif des réponses :\n");
+		printf("\nRecapitulatif des reponses :\n");
 		printf("Age : %d\n", age);
 		printf("Sexe : %s\n", sexe);
 		printf("Cinema : %d\n", cinema);

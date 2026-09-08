@@ -18,7 +18,7 @@ int main()
 		}
 		i++;
 	}
-
+	printf(tab)
 	// Tri à bulle
 	for (int j = 0; j < i - 1; j++) {
 		for (int k = 0; k < i - j - 1; k++) {

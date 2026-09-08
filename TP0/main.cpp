@@ -4,20 +4,19 @@
 
 #include <iostream>
 #include <stdio.h>
-#include <stdlib.h>
-
-
 int main()
 {
-	srand(time(NULL));
-	float moy = 0;
-	for (int i = 0; i < 30; i++) {
-		int note = rand() % 21;
-		moy += note;
+	int n;
+	std::cout << "Entrez un nombre entier : ";
+	int somme = 0;
+	int i = 1;
+	scanf_s("%d", &n);
+	while (i <= n) {
+		somme += i;
+		i++;
 	}
-	moy = moy / 30;
-	printf("La moyenne des 30 notes est : %f", moy);
-
+	printf("La somme des entiers de 1 a %d est : %d", n, somme);
+	return 0;
 }
 
 

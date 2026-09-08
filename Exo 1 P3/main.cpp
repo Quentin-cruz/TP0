@@ -6,7 +6,6 @@
 //Pour finir la saisie, appuyez sur la touche « ENTREE », qui possède le code ASCII 13.
 
 #include <iostream>
-#include <stdio.h>
 #include <conio.h>
 
 
@@ -15,7 +14,7 @@ void mot_de_passe(std::string &mdp) {
 	while (getche != 13) {
 		getche = _getch();
 		if (getche != 13) {
-			mdp += getche;
+			mdp += (char)getche;
 			printf("*");
 		}
 	}
