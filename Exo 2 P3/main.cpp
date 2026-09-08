@@ -1,6 +1,7 @@
 //Ecrire une fonction transforme qui permet de transformer les caractères minuscules en majuscule dans une chaine passée en argument.
 //La chaine modifiée sera affichée dans le programme principal, ainsi que le nombre de lettres qui ont subies une modification.
 
+#include <iostream>
 
 int main() {
 	char alpha[] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
@@ -24,6 +25,6 @@ int main() {
 		i++;
 	}
 	std::cout << "Phrase transformée : " << c << std::endl;
-	std::cout << "Nombre de lettres modifiées : " << lettresModifiees << std::endl;
+	std::cout << "Nombre de lettres modifiees : " << lettresModifiees << std::endl;
 	return 0;
 }
